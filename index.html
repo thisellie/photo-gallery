@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suarez, Aaron Paul</title>
+  </head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+<body>
+  <div class="flex-wrapper">
+    <nav id="main-nav">
+    <a class="title" href="index.html">
+      <img src="https://upload.wikimedia.org/wikipedia/en/a/a3/PamantasanNgLungsodNgValenzuelaLogo.png">
+      <h3>Suarez's Web</h3>
+    </a>
+    <div class="links">
+      <a href="">Main</a>      
+      <a href="about.html">About Us</a>
+      <a href="products.html">Products</a>
+      <a href="clients.html">Our Clients</a>
+      <a href="photographers.html">Our Photographers</a>
+    </div>
+  </nav>
+  <main>
+  <div>
+    <div class="slideshow">
+      <div class="slide">
+          <img width="750px" height="500px" src="https://images.unsplash.com/photo-1678776682765-25854662bbdb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1481&q=80">
+          <p>Isang van sa isang disyerto</p>
+      </div>
+      <div class="slide">
+          <img width="750px" height="500px" src="https://images.pexels.com/photos/709552/pexels-photo-709552.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+          <p>Isang sapa sa loob ng gubat</p>
+      </div>
+      <div class="slide">
+          <img width="750px" height="500px" src="https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+          <p>Bundok na may makulay na langit</p>
+      </div>
+      <div class="slide">
+          <img width="750px" height="500px" src="https://images.pexels.com/photos/2433467/pexels-photo-2433467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+          <p>Lighthouse sa tabi ng dalampasigan</p>
+      </div>
+      <div class="slide">
+          <img width="750px" height="500px" src="https://images.pexels.com/photos/1606328/pexels-photo-1606328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+          <p>Maulap na bundok</p>
+      </div>
+      <div class="carousel">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a> 
+  </div>
+  <div class="gallery">
+    <div class="header">
+      <h1>Photographic Album</h1>
+      <h3>My Landscape Collection</h3>
+    </div>
+      <div class="photos">
+        <img id="img-box" class="zoom" src="https://images.unsplash.com/photo-1678776682765-25854662bbdb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1481&q=80"  >
+        <img class="zoom" src="https://images.pexels.com/photos/709552/pexels-photo-709552.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" onclick="myImageFunction(this)">
+        <img class="zoom" src="https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" onclick="myImageFunction(this)">
+        <img class="zoom" src="https://images.pexels.com/photos/2433467/pexels-photo-2433467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" onclick="myImageFunction(this)">
+        <img class="zoom" src="https://images.pexels.com/photos/1606328/pexels-photo-1606328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" onclick="myImageFunction(this)">
+      </div>
+    </div>
+  </div>
+  </main>
+  </div>
+  <footer><p>⚒ by Suarez, Aaron Paul</p></footer>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>
