@@ -16,19 +16,21 @@ p {
 }
 
 #main-nav {
-  background: #f5f5f5;
-  position: sticky;
-  top: 0;
-  width: 300px;
-  height: 100vh;
+  background: #fff;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  /* position: sticky;
+  top: 0; */
+  height: 100px;
 }
 
 #main-nav .title {
-  background: #000080;
+  flex: 1;
   height: 100px;
   padding: 0 10px;
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 10px;
 }
@@ -39,24 +41,16 @@ p {
 }
 
 #main-nav .title h3 {
-  color: #ffffff;
   margin: 0;
 }
 
-#main-nav .links {
-  font-size: 16px;
-  display: flex;
-  flex-direction: column;
-  margin-top: 40px;
-}
-
-#main-nav .links a {
+#main-nav a {
   color: #000000;
   transition: background 0.4s ease;
   padding: 20px;
 }
 
-#main-nav .links a:hover {
+#main-nav a:not(.title):hover {
   background: #000080;
   color: #ffffff;
 }
@@ -110,7 +104,7 @@ p {
 
 .slideshow .carousel {
   text-align: center;
-  padding-top: 20px;
+  padding-top: 12px;
 }
 
 .slideshow .carousel .dot {
@@ -129,12 +123,19 @@ p {
   background-color: #717171;
 }
 
+.slide img {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
 /* Photogrid Styles */
 
 h1 {padding-bottom: 10px}
 
 .gallery {
-  padding: 20px 0 80px 0;
+  padding-top: 20px;
 }
 
 .gallery .header {
@@ -155,7 +156,7 @@ h1 {padding-bottom: 10px}
   grid-template: repeat(4, 1fr) / 1fr 4fr;
   gap: 20px;
   width: fit-content;
-  padding: 20px 0;
+  padding-top: 20px;
   margin: 0 auto;
 }
 
@@ -192,12 +193,12 @@ h1 {padding-bottom: 10px}
 /* Main */
 
 .flex-wrapper main {
-  width: 900px;
-  margin-top: 25px;
+  /* min-height: 100vh; */
+  /* margin-top: 25px; */
   display: flex;
   align-items: center;
   flex-direction: column;
-  flex-grow: 1;
+  flex: 1;
 }
 
 .flex-wrapper main .zoom {
@@ -212,9 +213,9 @@ h1 {padding-bottom: 10px}
 
 .grid {
   margin: 0 25px;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
   display: grid;
-  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
   gap: 20px;
 
 }
@@ -226,6 +227,10 @@ h1, h2, h3, h4, h5, h6, a {
   text-transform: uppercase;
 }
 
+article {
+  width: 800px;
+}
+
 article p {
   padding: 0 46px;
 }
@@ -234,19 +239,23 @@ footer {
   height: 50px;
   display: flex;
   justify-content: center;
-  padding: 5px;
-  background-color: #000080;
-  color: #fff;
+  padding: 25px 0;
+  /* background-color: #000080;
+  color: #fff; */
 }
 
 footer > p {
   font-family: 'League Spartan', sans-serif;
+  font-size: large;
   display: flex;
   align-items: center;
 }
 
 .flex-wrapper {
   display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
 }
 
 .text-center {
@@ -263,6 +272,7 @@ footer > p {
 
 .card {
   background: #f5f5f5;
+  /* height: 350px; */
   width: 225px;
 }
 
@@ -272,6 +282,7 @@ footer > p {
 
 .card a .card-content {
   padding: 15px;
+  /* white-space: nowrap; */
 }
 
 .card a .card-content * {
@@ -286,6 +297,9 @@ footer > p {
   margin: 5px 0;
   text-transform: none;
   font-size: 14px;
+  height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .banner {
